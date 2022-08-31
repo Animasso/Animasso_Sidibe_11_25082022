@@ -1,0 +1,17 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: 209px;
+  top: 500px;
+  background: black;
+}
+.footer img {
+  height: 40px;
+  width: 122px;
+
+  position: absolute;
+  left: 45.76%;
+  right: 45.76%;
+  top: 31.58%;
+  bottom: 49.55%;
+}

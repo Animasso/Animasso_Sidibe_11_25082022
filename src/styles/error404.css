@@ -1,0 +1,69 @@
+body {
+  /* height: 1024px;
+  width: 1440px; */
+}
+
+/* .error {
+} */
+.numberError {
+  position: absolute;
+  left: 33.14%;
+  right: 40.14%;
+  top: 30%;
+  bottom: 15.53%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 597px;
+  height: 263px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 142.6%;
+  color: #ff6060;
+}
+
+.textError {
+  position: absolute;
+  left: 25.49%;
+  right: 18.96%;
+  top: 70.18%;
+  bottom: 35.84%;
+  height: 51px;
+  width: 872px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 142.6%;
+  /* or 51px */
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #ff6060;
+}
+.redirectLink {
+  position: absolute;
+  left: 40.14%;
+  right: 40.14%;
+  top: 81.93%;
+  bottom: 15.53%;
+  height: 26px;
+  width: 284px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  /* identical to box height, or 26px */
+
+  display: flex;
+  align-items: flex-end;
+  text-decoration-line: underline;
+
+  color: #ff6060;
+}

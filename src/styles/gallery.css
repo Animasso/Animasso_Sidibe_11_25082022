@@ -1,0 +1,43 @@
+.gallery {
+  background: #f6f6f6;
+  position: relative;
+  width: 1240px;
+  height: fit-content;
+  left: 100px;
+  top: 437px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 50px;
+}
+.imgCover {
+  position: relative;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  width: 340px;
+  height: 340px;
+
+  border-radius: 10px;
+  border: 1px solid black;
+}
+.imgCover img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.title {
+  position: absolute;
+  left: 5.88%;
+  right: 5.88%;
+  top: 78.82%;
+  bottom: 5.88%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 142.6%;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+}

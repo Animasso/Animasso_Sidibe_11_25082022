@@ -1,0 +1,36 @@
+.logo {
+  height: 68px;
+  width: 210px;
+}
+.navBar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  height: 68px;
+  width: 1240px;
+  left: 100px;
+  top: 40px;
+}
+ul {
+  height: 34px;
+  width: 309px;
+  display: flex;
+  justify-content: space-around;
+}
+li {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: right;
+  color: #ff6060;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.activeLink {
+  color: #ff6060;
+  border-bottom: 2px solid #ff6060;
+}
