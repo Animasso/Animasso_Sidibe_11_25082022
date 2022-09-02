@@ -1,9 +1,11 @@
+import Dropdown from "../components/Dropdown";
 import NavBar from "../components/NavBar";
 
 function About(props) {
+  <NavBar />;
   return (
     <div>
-      <NavBar />
+      <Dropdown />
     </div>
   );
 }

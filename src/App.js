@@ -1,5 +1,6 @@
 import "./styles/styles.css";
 import { Routes, Route } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import Home from "./pages/Home";
 import HousingDetail from "./pages/HousingDetail";
 import About from "./pages/About";
@@ -13,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route />
-        <Route path="/HousingDetail" element={<HousingDetail />} />
+        <Route path="/HousingDetail/:id" element={<HousingDetail />} />
         <Route />
         <Route path="/About" element={<About />} />
         <Route />
