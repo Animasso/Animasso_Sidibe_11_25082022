@@ -1,24 +1,17 @@
-// import useFetch from "./hooks/useFetch";
-
-import { useState, useEffect } from "react";
+import useFetch from "../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
-// import { useParams } from "react-router-dom";
 
 function Gallery(props) {
   const url =
     "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json";
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    fetch(url)
-      .then((response) => response.json())
-      .then((listHouse) => setData(listHouse));
-  }, []);
-  console.log(data);
+  const houses = useFetch(url);
+  console.log(houses);
+
   let navigate = useNavigate();
 
   return (
     <div className="gallery">
-      {data.map((annonce) => (
+      {houses.map((annonce) => (
         <div
           className="imgCover"
           key={annonce.id}
