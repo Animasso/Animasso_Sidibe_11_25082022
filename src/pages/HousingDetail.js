@@ -1,17 +1,16 @@
 // import { useState } from "react";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
-
 function HousingDetail(props) {
   // const [oneLocation, setOneLocation] = useState([]);
   const params = useParams();
   console.log(params);
   const url =
     "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json";
-  const houses = useFetch(url);
-  console.log(houses);
+  const allHouses = useFetch(url);
+  console.log(allHouses);
 
-  const oneHouse = houses.find((house) => house.id === params);
+  const oneHouse = allHouses.find((house) => house.id === params);
   // const oneHouse = houses.find((house) => {
   //   return house.id === params.id;
   // });

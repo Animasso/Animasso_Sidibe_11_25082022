@@ -1,12 +1,8 @@
-import useFetch from "../hooks/useFetch";
+//import useFetch from "../hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 
 function Gallery(props) {
-  const url =
-    "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/Front-End+V2/P9+React+1/logements.json";
-  const houses = useFetch(url);
-  console.log(houses);
-
+  const { houses } = props;
   let navigate = useNavigate();
 
   return (
