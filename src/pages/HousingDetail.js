@@ -19,7 +19,6 @@ function HousingDetail(props) {
   useEffect(() => {
     const oneHouse = houses.find((house) => house.id === params.id);
     setLocation(oneHouse);
-    console.log(location);
   }, [houses, location, params.id]);
 
   return (
@@ -34,7 +33,7 @@ function HousingDetail(props) {
           </div>
         </div>
       </div>
-      <Dropdown oneHouse={location} />
+      <Dropdown oneHouse={location} content={location.description} />
     </div>
   );
 }

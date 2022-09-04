@@ -27,7 +27,8 @@
   border-radius: 0px;
   rotate: 180;
 }
-.boxText {
+.boxTextEquipement,
+.boxTextDescription {
   height: 249px;
   width: 582px;
   left: 0px;
