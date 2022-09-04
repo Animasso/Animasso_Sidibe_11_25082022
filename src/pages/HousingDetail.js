@@ -1,17 +1,26 @@
-// import { useState } from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
+import Dropdown from "../components/Dropdown";
+import TagsList from "../components/TagsList";
 
 function HousingDetail(props) {
-  // const [oneLocation, setOneLocation] = useState([]);
   const { houses } = props;
   const params = useParams();
-  console.log(params);
 
-  const oneHouse = houses.find((house) => {
-    return house.id === params.id;
+  console.log(params);
+  const [location, setLocation] = useState({
+    tags: [],
+    equipments: [],
+    pictures: [],
+    rating: "",
+    host: { name: "", picture: "" },
   });
-  console.log(oneHouse);
-  // setOneLocation(house);
+  useEffect(() => {
+    const oneHouse = houses.find((house) => house.id === params.id);
+    setLocation(oneHouse);
+    console.log(location);
+  }, [houses, location, params.id]);
 
   return (
     <div>
@@ -19,12 +28,13 @@ function HousingDetail(props) {
       <div className="singleLocation">
         <div className="first">
           <div className="locationTitlePosition">
-            <p className="Onetitle">{oneHouse.title}</p>
-            <p className="location">{oneHouse.location}</p>
-            <p className="tags"> </p>
+            <p className="Onetitle">{location.title}</p>
+            <p className="location">{location.location}</p>
+            <TagsList oneHouse={location} />
           </div>
         </div>
       </div>
+      <Dropdown oneHouse={location} />
     </div>
   );
 }
