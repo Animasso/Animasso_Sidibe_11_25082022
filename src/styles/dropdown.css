@@ -1,4 +1,4 @@
-.equipementBox {
+/* .equipementBox {
   height: 52px;
   width: 582px;
 
@@ -6,7 +6,7 @@
   left: 0%;
   right: 0%;
   top: 80.77%;
-  /* bottom: -459.62%; */
+  bottom: -459.62%;
 }
 .equipementChevron {
   display: flex;
@@ -35,4 +35,4 @@
   top: 42px;
   border-radius: 10px;
   background: #746b6b;
-}
+} */

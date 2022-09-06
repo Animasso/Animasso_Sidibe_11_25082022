@@ -1,15 +1,14 @@
-import { useState, useRef } from "react";
+import { useRef, useState } from "react";
 import chevron from "../assets/downchevron.png";
 
-function Dropdown(props) {
+function AboutDropdown(props) {
   const [isActive, setActive] = useState(false);
   const content = useRef(null);
   const titleBox = useRef(null);
-
   return (
-    <div className="dropDown">
-      <div className="dropDownChevron">
-        <p className="dropDownTitle" ref={titleBox}>
+    <div className="aboutDropDown">
+      <div className="aboutDropDownChevron">
+        <p className="aboutDroptitle" ref={titleBox}>
           {props.titleBox}
         </p>
         <img
@@ -21,7 +20,7 @@ function Dropdown(props) {
       </div>
 
       {isActive && (
-        <div className="boxTextDescription">
+        <div className="aboutBoxTextDescription">
           <p className="text" ref={content}>
             {props.content}
           </p>
@@ -31,4 +30,4 @@ function Dropdown(props) {
   );
 }
 
-export default Dropdown;
+export default AboutDropdown;

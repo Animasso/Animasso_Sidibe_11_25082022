@@ -22,18 +22,35 @@ function HousingDetail(props) {
   }, [houses, location, params.id]);
 
   return (
-    <div>
+    <div className="main">
       <div className="carrousel"></div>
-      <div className="singleLocation">
-        <div className="first">
-          <div className="locationTitlePosition">
-            <p className="Onetitle">{location.title}</p>
-            <p className="location">{location.location}</p>
-            <TagsList oneHouse={location} />
-          </div>
-        </div>
+
+      <div className="locationTitlePosition">
+        <div className="oneTitle">{location.title}</div>
+        <div className="location">{location.location}</div>
       </div>
-      <Dropdown oneHouse={location} content={location.description} />
+      <div className="tags">
+        {location.tags.map((tag) => (
+          <TagsList content={tag} key={tag} />
+        ))}
+      </div>
+
+      <div className="dropDowns">
+        <Dropdown
+          oneHouse={location}
+          titleBox="Description"
+          content={location.description}
+        />
+        <Dropdown
+          oneHouse={location}
+          titleBox="Equipements"
+          content=<ul className="equipementList">
+            {location.equipments.map((equipment) => (
+              <li key={equipment}>{equipment}</li>
+            ))}
+          </ul>
+        />
+      </div>
     </div>
   );
 }

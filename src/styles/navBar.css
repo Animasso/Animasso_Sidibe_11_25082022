@@ -11,13 +11,13 @@
   left: 100px;
   top: 40px;
 }
-ul {
+.ulNavbar {
   height: 34px;
   width: 309px;
   display: flex;
   justify-content: space-around;
 }
-li {
+.liNavbar {
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;

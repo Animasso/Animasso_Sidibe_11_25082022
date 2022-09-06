@@ -7,8 +7,8 @@ function NavBar(props) {
       <div className="logo">
         <img src={logo} alt="logo" />
       </div>
-      <ul>
-        <li>
+      <ul className="ulNavbar">
+        <li className="liNavbar">
           <NavLink
             to="/"
             className={({ isActive }) => (isActive ? "activeLink" : undefined)}
@@ -16,7 +16,7 @@ function NavBar(props) {
             Accueil
           </NavLink>
         </li>
-        <li>
+        <li className="liNavbar">
           <NavLink
             to="/About"
             className={({ isActive }) => (isActive ? "activeLink" : undefined)}
