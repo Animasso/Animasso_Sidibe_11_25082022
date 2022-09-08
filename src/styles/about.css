@@ -1,15 +1,12 @@
 .aboutDropdowns {
-  position: absolute;
-  top: 55%;
-  left: 12%;
-}
-.aboutDropdown {
-  height: 47px;
-  width: 1023px;
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
-  left: 0px;
-  top: 0px;
-  border-radius: 5px;
+  margin-left: 200px;
+}
+.aboutDropDown {
+  width: 1000px;
+  margin-top: 30px;
 }
 .aboutDroptitle {
   margin-left: 20px;
@@ -24,10 +21,7 @@
   display: flex;
   justify-content: space-between;
   background: #ff6060;
-  /* height: 52px;
-  width: 582px; */
-  left: 0px;
-  top: 0px;
+  width: 1023px;
   border-radius: 10px;
 }
 .aboutBoxTextDescription {
@@ -41,4 +35,8 @@
   top: 80.77%;
   bottom: -459.62%;
   font-size: 18px;
+}
+.textAbout {
+  padding: 10px;
+  margin: 0;
 }

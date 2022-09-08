@@ -1,0 +1,30 @@
+.carrousel {
+  height: 415px;
+  width: 1240px;
+  margin-top: 37px;
+  margin-left: 100px;
+  border-radius: 25px;
+}
+.carrouselImg {
+  object-fit: cover;
+  height: 415px;
+  width: 1240px;
+  border-radius: 25px;
+}
+.arrows {
+  /* display: flex;
+  justify-content: space-between;
+  margin-top: 150px; */
+  position: absolute;
+}
+.vectorLeft {
+  margin-left: 20px;
+}
+.vectorRight {
+  margin-right: 20px;
+}
+.active {
+  object-fit: cover;
+  height: 415px;
+  width: 1240px;
+}

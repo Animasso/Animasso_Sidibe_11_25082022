@@ -3,13 +3,13 @@
   width: 210px;
 }
 .navBar {
-  position: absolute;
+  /* position: absolute; */
   display: flex;
   justify-content: space-between;
   height: 68px;
   width: 1240px;
-  left: 100px;
-  top: 40px;
+  margin-left: 100px;
+  margin-top: 40px;
 }
 .ulNavbar {
   height: 34px;

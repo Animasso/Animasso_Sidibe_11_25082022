@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import Carrousel from "../components/Carrousel";
 import Dropdown from "../components/Dropdown";
 import TagsList from "../components/TagsList";
 
@@ -23,7 +24,7 @@ function HousingDetail(props) {
 
   return (
     <div className="main">
-      <div className="carrousel"></div>
+      <Carrousel oneHouse={location} />
 
       <div className="locationTitlePosition">
         <div className="oneTitle">{location.title}</div>

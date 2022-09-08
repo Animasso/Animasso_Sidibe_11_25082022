@@ -1,11 +1,8 @@
 .oneTitle {
   width: 635px;
   height: 51px;
-  position: absolute;
-  left: 6.94%;
-  right: 48.96%;
-  top: 83%;
-  bottom: 39.06%;
+  margin-top: 30px;
+  margin-left: 100px;
   white-space: nowrap;
   font-family: "Montserrat";
   font-style: normal;
@@ -20,13 +17,7 @@
 .location {
   width: 300px;
   height: 26px;
-  position: absolute;
-  left: 6.94%;
-  right: 80.83%;
-  top: 87%;
-  bottom: 36.52%;
-  margin-top: 20px;
-
+  margin-left: 100px;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -35,11 +26,9 @@
   color: #ff6060;
 }
 .dropDowns {
-  position: absolute;
-  top: 102%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 65px;
+  display: flex;
+  margin-top: 25px;
+  gap: 78px;
   margin-left: 100px;
 }
 .dropDown {
@@ -52,8 +41,6 @@
   background: #ff6060;
   height: 52px;
   width: 582px;
-  left: 0px;
-  top: 0px;
   border-radius: 10px;
 }
 .chevron {
@@ -71,30 +58,18 @@
   font-size: 18px;
   line-height: 142.6%;
 }
-
-.carrousel {
-  position: absolute;
-  height: 415px;
-  width: 1240px;
-  left: 6.5%;
-  top: 20%;
-  border-radius: 25px;
-  background: #866464;
-}
 .boxTextDescription {
   width: 582px;
   height: 249px;
   background: #f6f6f6;
   color: #ff6060;
-  left: 0%;
-  right: 0%;
-  top: 80.77%;
-  bottom: -459.62%;
+
   font-size: 18px;
 }
 .text {
-  padding: 20px;
+  padding: 10px;
 }
+
 .equipementList {
   padding-left: 0;
   margin: 0;
@@ -103,10 +78,9 @@
   list-style: none;
 }
 .tags {
-  position: absolute;
-  top: 94%;
-  left: 7%;
+  margin-left: 90px;
   display: flex;
+  margin-top: 15px;
 }
 .tag {
   width: 135px;
@@ -115,6 +89,7 @@
   border-radius: 10px;
   background-color: #ff6060;
   color: white;
+  margin-left: 10px;
 
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;

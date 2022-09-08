@@ -21,7 +21,7 @@ function AboutDropdown(props) {
 
       {isActive && (
         <div className="aboutBoxTextDescription">
-          <p className="text" ref={content}>
+          <p className="textAbout" ref={content}>
             {props.content}
           </p>
         </div>

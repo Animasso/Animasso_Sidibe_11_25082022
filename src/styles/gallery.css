@@ -1,19 +1,22 @@
 .gallery {
   background: #f6f6f6;
-  position: relative;
+
   width: 1240px;
-  height: fit-content;
-  left: 100px;
-  top: 437px;
+
+  margin-left: 100px;
+  margin-top: 43px;
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  row-gap: 50px;
 }
 .imgCover {
   position: relative;
+  /* position: relative;
   top: 50px;
   left: 50px;
-  right: 50px;
+  right: 50px; */
+  margin-top: 56px;
+  margin-left: 50px;
   width: 340px;
   height: 340px;
 
@@ -28,9 +31,11 @@
 }
 .title {
   position: absolute;
-  left: 5.88%;
+
+  left: 4%;
+  top: 85%;
   right: 5.88%;
-  top: 78.82%;
+
   bottom: 5.88%;
   font-family: "Montserrat";
   font-style: normal;
@@ -38,6 +43,6 @@
   font-size: 18px;
   line-height: 142.6%;
   display: flex;
-  align-items: flex-end;
-  color: white;
+  /* align-items: flex-end; */
+  color: #ffffff;
 }
