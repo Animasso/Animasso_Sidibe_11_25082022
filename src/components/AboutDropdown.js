@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import chevron from "../assets/downchevron.png";
+import vectorDown from "../assets/vectorDown.png";
 
 function AboutDropdown(props) {
   const [isActive, setActive] = useState(false);
@@ -8,13 +8,13 @@ function AboutDropdown(props) {
   return (
     <div className="aboutDropDown">
       <div className="aboutDropDownChevron">
-        <p className="aboutDroptitle" ref={titleBox}>
+        <div className="aboutDroptitle" ref={titleBox}>
           {props.titleBox}
-        </p>
+        </div>
         <img
           className="chevron"
           onClick={() => setActive(!isActive)}
-          src={chevron}
+          src={vectorDown}
           alt=""
         />
       </div>

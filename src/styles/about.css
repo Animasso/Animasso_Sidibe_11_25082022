@@ -40,3 +40,27 @@
   padding: 10px;
   margin: 0;
 }
+@media screen and (max-width: 426px) {
+  .aboutDropDown {
+    width: 335px;
+  }
+  .aboutDroptitle {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .aboutDropDownChevron {
+    width: 100%;
+    height: 30px;
+  }
+  .aboutDropdowns {
+    width: 335px;
+    margin-left: 20px;
+  }
+  .aboutBoxTextDescription {
+    height: 143.65383911132812px;
+    width: 335px;
+
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}

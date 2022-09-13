@@ -20,14 +20,14 @@ function Carrousel(props) {
   console.log(current);
   return (
     <div className="carrousel">
-      <div className="arrows">
-        <span className="vectorLeft">
-          <img src={vectorLeft} alt="" onClick={prevSlide} />
-        </span>
-        <span className="vectorRight">
-          <img src={vectorRight} alt="" onClick={nextSlide} />
-        </span>
-      </div>
+      <img src={vectorLeft} className="vectorLeft" alt="" onClick={prevSlide} />
+      <img
+        src={vectorRight}
+        className="vectorRight"
+        alt=""
+        onClick={nextSlide}
+      />
+
       {allPictures.map((picture, index) => {
         return (
           <div

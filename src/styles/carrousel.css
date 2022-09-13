@@ -16,15 +16,79 @@
   justify-content: space-between;
   margin-top: 150px; */
   position: absolute;
+  border: 1px solid;
 }
 .vectorLeft {
-  margin-left: 20px;
+  position: absolute;
+  top: 42%;
+  left: 8%;
 }
 .vectorRight {
-  margin-right: 20px;
+  position: ABSOLUTE;
+  left: 83%;
+  top: 42%;
 }
 .active {
   object-fit: cover;
   height: 415px;
   width: 1240px;
+}
+@media screen and (max-width: 425px) {
+  .main {
+    width: 425px;
+  }
+  .carrousel {
+    width: 335px;
+    height: 255px;
+    margin-left: 20px;
+  }
+  .front {
+    flex-direction: column;
+    width: 320px;
+    margin: 0;
+    margin-left: 20px;
+    flex-direction: column;
+  }
+  .locationTitlePosition {
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    height: 46px;
+  }
+  .location {
+    margin: 0;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .oneTitle {
+    width: 335px;
+    height: 46px;
+    margin: 0;
+    font-size: 18px;
+    white-space: break-spaces;
+  }
+  .tags {
+    margin-left: 20px;
+  }
+  .tag {
+    width: 100px;
+  }
+  .active {
+    width: 335px;
+    height: 255px;
+  }
+  .carrouselImg {
+    width: 335px;
+    height: 255px;
+  }
+  .vectorLeft {
+    top: 33%;
+    left: 11%;
+    width: 25px;
+  }
+  .vectorRight {
+    left: 75%;
+    top: 33%;
+    width: 25px;
+  }
 }

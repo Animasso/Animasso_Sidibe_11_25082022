@@ -25,11 +25,17 @@ function HousingDetail(props) {
   return (
     <div className="main">
       <Carrousel oneHouse={location} />
-
-      <div className="locationTitlePosition">
-        <div className="oneTitle">{location.title}</div>
-        <div className="location">{location.location}</div>
+      <div className="front">
+        <div className="locationTitlePosition">
+          <div className="oneTitle">{location.title}</div>
+          <div className="location">{location.location}</div>
+        </div>
+        <div className="host">
+          <div className="name">{location.host.name}</div>
+          <img src={location.host.picture} className="hostImage" alt="" />
+        </div>
       </div>
+
       <div className="tags">
         {location.tags.map((tag) => (
           <TagsList content={tag} key={tag} />

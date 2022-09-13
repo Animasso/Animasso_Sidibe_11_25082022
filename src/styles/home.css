@@ -1,9 +1,6 @@
-/* body {
-  height: 1095px;
+.homeMain {
   width: 1240px;
-  left: 100px;
-  top: 171px;
-} */
+}
 .background {
   /* position: absolute; */
   width: 1240px;
@@ -18,11 +15,9 @@
 }
 .background img {
   height: 223px;
-  /* width: 1240px; */
   left: 100px;
   top: 171px;
   border-radius: 25px;
-  /* display: flex; */
   border: 2px solid;
   display: block;
   width: 100%;
@@ -45,3 +40,53 @@
   display: flex;
   align-items: flex-end;
 }
+@media screen and (max-width: 426px) {
+  .homeMain {
+    width: 425px;
+  }
+  .navBar {
+    width: 335px;
+    /* height: 111px; */
+    margin-left: 20px;
+  }
+  .logo img {
+    width: 100%;
+  }
+  /* .logo {
+    height: 47px;
+    width: 145px;
+  } */
+  .background img {
+    width: 335px;
+    height: 111px;
+    object-fit: cover;
+  }
+  .liNavbar {
+    font-size: 16px;
+  }
+  .background {
+    width: 335px;
+    height: 111px;
+    margin-left: 20px;
+  }
+  .background img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .cta {
+    height: 48px;
+    width: 217px;
+    position: absolute;
+    font-size: 24px;
+    top: 27%;
+    left: 17%;
+  }
+}
+/* .gallery {
+  width: 425px;
+  margin: 0;
+  margin: 0;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+} */

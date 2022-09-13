@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 function Home(props) {
   const { houses } = props;
   return (
-    <div>
+    <div className="homeMain">
       <div className="background">
         <img src={background} alt="background" />
         <div className="cta">Chez vous, partout et ailleurs</div>

@@ -44,11 +44,17 @@
   border-radius: 10px;
 }
 .chevron {
-  height: 26.40000152587893px;
-  width: 15.560005187988295px;
-  left: 29.200027465820312px;
-  top: 7.78662109375px;
-  border-radius: 0px;
+  height: 19px;
+  width: 27px;
+  margin-top: 21px;
+  margin-right: 10px;
+}
+.chevronDown {
+  height: 19px;
+  width: 27px;
+  margin-top: 21px;
+  margin-right: 10px;
+  rotate: 90deg;
 }
 .dropDownTitle {
   margin-left: 20px;
@@ -101,4 +107,74 @@
   /* width: 100%;
   color: #ffffff; */
   white-space: nowrap;
+}
+.front {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 170px;
+}
+.host {
+  display: flex;
+  margin-top: 40px;
+}
+.name {
+  width: 93px;
+  height: 52px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #ff6060;
+  margin-right: 10px;
+}
+.hostImage {
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+@media screen and (max-width: 426px) {
+  .name {
+    font-size: 14px;
+  }
+  .hostImage {
+    width: 32px;
+    height: 32px;
+  }
+  .dropDowns {
+    height: 29.931270599365234px;
+    width: 335px;
+    margin-left: 20px;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 45px;
+  }
+  .dropDown {
+    width: 100%;
+  }
+  .dropDownTitle {
+    font-size: 11px;
+  }
+  .dropDownChevron {
+    height: 29.931270599365234px;
+    width: 335px;
+    border-radius: 5px;
+  }
+  .chevron {
+    height: 14px;
+    width: 22px;
+    margin-top: 12px;
+    margin-right: 10px;
+  }
+  .boxTextDescription {
+    height: 143.32472229003906px;
+    width: 335px;
+    font-size: 12px;
+    border-radius: 5px;
+  }
 }
