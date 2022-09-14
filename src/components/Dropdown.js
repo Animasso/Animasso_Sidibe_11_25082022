@@ -4,12 +4,11 @@ import vectorDown from "../assets/vectorDown.png";
 
 function Dropdown(props) {
   const [isActive, setActive] = useState(false);
-  // const [rotation, setRotation] = useState(false);
+  // const [rotation, setRotation] = useState("chevron");
   const content = useRef(null);
   const titleBox = useRef(null);
-  // setRotation(setActive === "Isactive" ? vectorDown : vectorUp);
 
-  console.log(props.children);
+  // setRotation(setActive === "active" ? "chevron" : "chevronRotate");
   return (
     <div className="dropDown">
       <div className="dropDownChevron">

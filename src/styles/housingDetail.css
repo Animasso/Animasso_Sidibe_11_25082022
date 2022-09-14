@@ -83,10 +83,15 @@
   flex-direction: column;
   list-style: none;
 }
-.tags {
+.tagsEtoile {
   margin-left: 90px;
   display: flex;
   margin-top: 15px;
+  width: 1240px;
+  justify-content: space-between;
+}
+.tags {
+  display: flex;
 }
 .tag {
   width: 135px;
@@ -116,6 +121,17 @@
 .host {
   display: flex;
   margin-top: 40px;
+}
+.allStars {
+  height: 36px;
+  width: 196px;
+  display: flex;
+}
+.stars img {
+  width: 100%;
+}
+.chevronrotate {
+  rotate: 90deg;
 }
 .name {
   width: 93px;
@@ -171,6 +187,7 @@
     margin-top: 12px;
     margin-right: 10px;
   }
+
   .boxTextDescription {
     height: 143.32472229003906px;
     width: 335px;

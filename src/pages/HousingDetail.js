@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Dropdown from "../components/Dropdown";
+import Stars from "../components/Stars";
 import TagsList from "../components/TagsList";
 
 function HousingDetail(props) {
@@ -36,10 +37,13 @@ function HousingDetail(props) {
         </div>
       </div>
 
-      <div className="tags">
-        {location.tags.map((tag) => (
-          <TagsList content={tag} key={tag} />
-        ))}
+      <div className="tagsEtoile">
+        <div className="tags">
+          {location.tags.map((tag) => (
+            <TagsList content={tag} key={tag} />
+          ))}
+        </div>
+        <Stars oneHouse={location} />
       </div>
 
       <div className="dropDowns">
