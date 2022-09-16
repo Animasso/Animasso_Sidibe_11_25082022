@@ -2,7 +2,7 @@
   width: 635px;
   height: 51px;
   margin-top: 30px;
-  margin-left: 100px;
+
   white-space: nowrap;
   font-family: "Montserrat";
   font-style: normal;
@@ -11,13 +11,19 @@
   line-height: 142.6%;
   color: #ff6060;
 }
+.locationPostion {
+  margin-left: 100px;
+}
 .dropDownTitle {
   color: #ffffff;
+}
+.locationTitlePosition {
+  margin-left: 100px;
 }
 .location {
   width: 300px;
   height: 26px;
-  margin-left: 100px;
+
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
@@ -84,14 +90,13 @@
   list-style: none;
 }
 .tagsEtoile {
-  margin-left: 90px;
-  display: flex;
   margin-top: 15px;
-  width: 1240px;
+
   justify-content: space-between;
 }
 .tags {
   display: flex;
+  margin-top: 15px;
 }
 .tag {
   width: 135px;
@@ -100,8 +105,7 @@
   border-radius: 10px;
   background-color: #ff6060;
   color: white;
-  margin-left: 10px;
-
+  margin-right: 5px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -126,6 +130,7 @@
   height: 36px;
   width: 196px;
   display: flex;
+  margin-left: 15px;
 }
 .stars img {
   width: 100%;
@@ -157,15 +162,16 @@
 @media screen and (max-width: 426px) {
   .name {
     font-size: 14px;
+    text-align: unset;
   }
   .hostImage {
     width: 32px;
     height: 32px;
+    margin-top: 10px;
   }
   .dropDowns {
-    height: 29.931270599365234px;
     width: 335px;
-    margin-left: 20px;
+    margin-left: 0px;
     border-radius: 5px;
     flex-direction: column;
     gap: 45px;

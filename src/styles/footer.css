@@ -15,7 +15,7 @@
   top: 31.58%;
   bottom: 49.55%;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .footer {
     width: 425px;
   }

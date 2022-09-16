@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import vectorDown from "../assets/vectorDown.png";
-// import vectorUp from "../assets/vectorUp.png";
+import vectorUp from "../assets/vectorUp.png";
 
 function Dropdown(props) {
   const [isActive, setActive] = useState(false);
@@ -8,7 +8,6 @@ function Dropdown(props) {
   const content = useRef(null);
   const titleBox = useRef(null);
 
-  // setRotation(setActive === "active" ? "chevron" : "chevronRotate");
   return (
     <div className="dropDown">
       <div className="dropDownChevron">
@@ -18,7 +17,7 @@ function Dropdown(props) {
         <img
           className="chevron"
           onClick={() => setActive(!isActive)}
-          src={vectorDown}
+          src={isActive ? vectorUp : vectorDown}
           alt=""
         />
       </div>

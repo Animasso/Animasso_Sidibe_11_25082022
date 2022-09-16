@@ -42,11 +42,12 @@
 @media screen and (max-width: 426px) {
   .homeMain {
     width: 425px;
+    margin-left: 40px;
   }
   .navBar {
     width: 335px;
     /* height: 111px; */
-    margin-left: 20px;
+    margin-left: 40px;
   }
   .logo img {
     width: 100%;
@@ -66,7 +67,7 @@
   .background {
     width: 335px;
     height: 111px;
-    margin-left: 20px;
+    margin-left: 0;
   }
   .background img {
     width: 100%;
@@ -77,10 +78,21 @@
     width: 217px;
     position: absolute;
     font-size: 24px;
-    top: 27%;
+    top: 25%;
     left: 17%;
   }
 }
+@media screen and (max-width: 320px) {
+  .cta {
+    top: 25%;
+  }
+}
+
+/* @media screen and (max-width: 320px) {
+  .cta {
+    top: 28%;
+  }
+} */
 /* .gallery {
   width: 425px;
   margin: 0;
