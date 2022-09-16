@@ -25,16 +25,16 @@
   object-fit: cover;
 }
 .aboutDropDown {
-  width: 1000px;
+  width: 1023px;
   margin-top: 30px;
 }
 .aboutDroptitle {
   margin-left: 20px;
   font-family: "Montserrat";
   font-style: normal;
-  margin-top: 5px;
+  margin-top: 10px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 142.6%;
   color: #ffffff;
 }
@@ -43,6 +43,7 @@
   justify-content: space-between;
   background: #ff6060;
   width: 1023px;
+  height: 47px;
   border-radius: 10px;
 }
 .aboutBoxTextDescription {

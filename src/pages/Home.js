@@ -11,7 +11,6 @@ function Home(props) {
           <img src={background} alt="background" />
           <div className="cta">Chez vous, partout et ailleurs</div>
         </div>
-
         <Gallery houses={houses} />
       </div>
       <Footer />

@@ -16,9 +16,9 @@
   bottom: 49.55%;
 }
 @media screen and (max-width: 426px) {
-  .footer {
+  /* .footer {
     width: 425px;
-  }
+  } */
   .footer img {
     left: 37.76%;
   }

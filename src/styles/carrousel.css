@@ -53,6 +53,7 @@
     flex-direction: column;
     width: 335px;
     height: 46px;
+    margin-left: 0;
   }
   .location {
     margin: 0;
@@ -69,6 +70,10 @@
   .tagsEtoile {
     margin-left: 0;
     width: 335px;
+    margin-top: 40px;
+    flex-direction: row-reverse;
+    display: FLEX;
+    justify-content: space-between;
   }
   .tags {
     margin-left: 0px;
@@ -86,13 +91,28 @@
     height: 255px;
   }
   .vectorLeft {
-    top: 33%;
+    top: 30%;
     left: 11%;
     width: 25px;
   }
   .vectorRight {
-    left: 75%;
-    top: 33%;
+    left: 80%;
+    top: 30%;
     width: 25px;
+  }
+}
+@media screen and (max-width: 412px) {
+  .vectorLeft .vectorRight {
+    top: 28%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .vectorLeft {
+    top: 33%;
+    left: 14%;
+  }
+  .vectorRight {
+    top: 33%;
+    left: 90%;
   }
 }
