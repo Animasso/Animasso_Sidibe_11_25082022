@@ -5,5 +5,4 @@ function TagsList(props) {
     </div>
   );
 }
-
 export default TagsList;
