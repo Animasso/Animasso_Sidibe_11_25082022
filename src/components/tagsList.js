@@ -5,10 +5,5 @@ function TagsList(props) {
     </div>
   );
 }
-// ffr
-// {
-
-//   dkfmmvmmdkekvke
-// }
 
 export default TagsList;
