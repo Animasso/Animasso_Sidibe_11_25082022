@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Animasso_Sidibe_11_25082022/static/css/main.e165f82d.css",
+    "main.js": "/Animasso_Sidibe_11_25082022/static/js/main.a7717d02.js",
+    "static/media/Apropos.png": "/Animasso_Sidibe_11_25082022/static/media/Apropos.316205ece8417bed82ff.png",
+    "static/media/background.png": "/Animasso_Sidibe_11_25082022/static/media/background.22c1ed56b9b513f63a73.png",
+    "index.html": "/Animasso_Sidibe_11_25082022/index.html",
+    "main.e165f82d.css.map": "/Animasso_Sidibe_11_25082022/static/css/main.e165f82d.css.map",
+    "main.a7717d02.js.map": "/Animasso_Sidibe_11_25082022/static/js/main.a7717d02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e165f82d.css",
+    "static/js/main.a7717d02.js"
+  ]
+}
