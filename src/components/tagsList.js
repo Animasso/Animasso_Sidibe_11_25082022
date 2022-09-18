@@ -1,4 +1,4 @@
-function tagsList(props) {
+function TagsList(props) {
   return (
     <div className="tag">
       <div className="tagText">{props.content}</div>
@@ -6,4 +6,4 @@ function tagsList(props) {
   );
 }
 
-export default tagsList;
+export default TagsList;
