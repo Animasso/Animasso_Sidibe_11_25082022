@@ -1,17 +1,14 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import vectorDown from "../assets/vectorDown.png";
 import vectorUp from "../assets/vectorUp.png";
 
 function AboutDropdown(props) {
   const [isActive, setActive] = useState(false);
-  const content = useRef(null);
-  const titleBox = useRef(null);
+
   return (
     <div className="aboutDropDown">
       <div className="aboutDropDownChevron">
-        <div className="aboutDroptitle" ref={titleBox}>
-          {props.titleBox}
-        </div>
+        <div className="aboutDroptitle">{props.titleBox}</div>
         <img
           className="chevron"
           onClick={() => setActive(!isActive)}
@@ -22,9 +19,7 @@ function AboutDropdown(props) {
 
       {isActive && (
         <div className="aboutBoxTextDescription">
-          <p className="textAbout" ref={content}>
-            {props.content}
-          </p>
+          <p className="textAbout">{props.content}</p>
         </div>
       )}
     </div>
