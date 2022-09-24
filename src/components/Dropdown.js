@@ -20,7 +20,7 @@ function Dropdown(props) {
 
       {isActive && (
         <div className="boxTextDescription">
-          <p className="text">{props.content}</p>
+          <div className="text">{props.content}</div>
         </div>
       )}
     </div>

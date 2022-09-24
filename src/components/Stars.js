@@ -19,11 +19,13 @@ function Stars(props) {
       {arrayRedStar.map((star, index) => (
         <div className="stars">
           <img src={redStar} key={index} alt="" />
+          {console.log(index)}
         </div>
       ))}
       {arrayGreyStar.map((star, index) => (
         <div className="stars">
           <img src={greyStar} key={index} alt="" />
+          {console.log(index)}
         </div>
       ))}
     </div>
