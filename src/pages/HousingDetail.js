@@ -5,7 +5,7 @@ import Carrousel from "../components/Carrousel";
 import Dropdown from "../components/Dropdown";
 import Footer from "../components/Footer";
 import Stars from "../components/Stars";
-import TagsList from "../components/tagslist";
+import TagsList from "../components/tagsList";
 
 function HousingDetail(props) {
   const { houses } = props;
