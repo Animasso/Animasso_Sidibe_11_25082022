@@ -4,7 +4,7 @@ import greyStar from "../assets/GreyStar.png";
 function Stars(props) {
   const { oneHouse } = props;
   const rate = parseInt(oneHouse.rating);
-  console.log(rate);
+
   let arrayRedStar = [];
   let arrayGreyStar = [];
   for (let i = 1; i <= rate; i++) {
@@ -13,19 +13,17 @@ function Stars(props) {
   for (let i = 1; i <= 5 - rate; i++) {
     arrayGreyStar.push(rate);
   }
-  console.log("arrayGreyStar:", arrayGreyStar);
-  console.log(arrayRedStar);
 
   return (
     <div className="allStars">
-      {arrayRedStar.map((star) => (
+      {arrayRedStar.map((star, index) => (
         <div className="stars">
-          <img src={redStar} alt="" />
+          <img src={redStar} key={index} alt="" />
         </div>
       ))}
-      {arrayGreyStar.map((star) => (
+      {arrayGreyStar.map((star, index) => (
         <div className="stars">
-          <img src={greyStar} alt="" />
+          <img src={greyStar} key={index} alt="" />
         </div>
       ))}
     </div>

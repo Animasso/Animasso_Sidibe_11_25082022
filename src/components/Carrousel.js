@@ -6,9 +6,8 @@ function Carrousel(props) {
   const [current, setCurrent] = useState(0);
   const { oneHouse } = props;
   const allPictures = oneHouse.pictures;
-  console.log("allPictures:", allPictures);
+
   const length = allPictures.length;
-  console.log("length:", length);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -17,7 +16,7 @@ function Carrousel(props) {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-  console.log(current);
+
   return (
     <div className="carrousel">
       {allPictures.length > 1 && (

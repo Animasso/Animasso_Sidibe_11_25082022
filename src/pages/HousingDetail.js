@@ -56,11 +56,11 @@ function HousingDetail(props) {
           <Dropdown
             oneHouse={location}
             titleBox="Equipements"
-            content=<ul className="equipementList">
+            content=<div className="equipementList">
               {location.equipments.map((equipment) => (
-                <li key={equipment}>{equipment}</li>
+                <div key={equipment}>{equipment}</div>
               ))}
-            </ul>
+            </div>
           />
         </div>
       </div>
