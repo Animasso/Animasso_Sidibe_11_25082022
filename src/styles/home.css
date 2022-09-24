@@ -52,10 +52,6 @@
   .logo img {
     width: 100%;
   }
-  /* .logo {
-    height: 47px;
-    width: 145px;
-  } */
   .background img {
     width: 335px;
     height: 111px;
@@ -78,7 +74,7 @@
     width: 217px;
     position: absolute;
     font-size: 24px;
-    top: 25%;
+    top: 24%;
     left: 17%;
   }
 }
