@@ -17,14 +17,14 @@ function Stars(props) {
   return (
     <div className="allStars">
       {arrayRedStar.map((star, index) => (
-        <div className="stars">
-          <img src={redStar} key={index} alt="" />
+        <div className="stars" key={index}>
+          <img src={redStar} alt="" />
           {console.log(index)}
         </div>
       ))}
       {arrayGreyStar.map((star, index) => (
-        <div className="stars">
-          <img src={greyStar} key={index} alt="" />
+        <div className="stars" key={index}>
+          <img src={greyStar} alt="" />
           {console.log(index)}
         </div>
       ))}

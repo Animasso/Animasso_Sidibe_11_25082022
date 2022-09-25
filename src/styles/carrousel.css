@@ -12,18 +12,17 @@
   border-radius: 25px;
 }
 .arrows {
-  /* display: flex;
-  justify-content: space-between;
-  margin-top: 150px; */
   position: absolute;
   border: 1px solid;
 }
 .vectorLeft {
+  cursor: pointer;
   position: absolute;
   top: 42%;
   left: 8%;
 }
 .vectorRight {
+  cursor: pointer;
   position: ABSOLUTE;
   left: 83%;
   top: 42%;
