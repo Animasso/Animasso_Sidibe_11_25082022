@@ -4,7 +4,6 @@ import vectorUp from "../assets/vectorUp.png";
 
 function Dropdown(props) {
   const [isActive, setActive] = useState(false);
-  // const [rotation, setRotation] = useState("chevron");
 
   return (
     <div className="dropDown">

@@ -11,7 +11,6 @@ function HousingDetail(props) {
   const { houses } = props;
   const params = useParams();
 
-  console.log(params);
   const [location, setLocation] = useState({
     tags: [],
     equipments: [],
